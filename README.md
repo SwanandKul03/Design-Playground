@@ -1,4 +1,6 @@
-Design Playground
+#Design Playground#
+
+
 An interactive design system playground for exploring colours, typography, reusable components, variants and shared variables.
 
 The design system was created in Figma first. This project brings that system into a browser, where visitors can inspect its foundations, change component properties and use the components on a slate alongside text and drawings.
