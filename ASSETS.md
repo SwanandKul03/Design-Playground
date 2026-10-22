@@ -1,25 +1,35 @@
-# Assets and data
+# Assets and source material
 
-All files required by the website are bundled locally. The website does not fetch fonts from a CDN or require a Figma API key.
+The website uses local assets only. It does not request fonts or design tokens from a CDN and does not connect to Figma.
 
-| Runtime asset | Source and use |
+## Browser assets
+
+| Runtime asset | Use |
 | --- | --- |
-| dist/assets/fonts/Heading-Bold.woff2 | Bold heading font from your supplied font delivery; used through the SystemHeading CSS alias |
-| dist/assets/fonts/VanillaSans-Regular.woff2 | Supplied regular text font, used through SystemText |
-| dist/assets/fonts/VanillaSans-Medium.woff2 | Supplied medium text font, used through SystemText |
-| dist/assets/fonts/InstrumentSans-400.woff2 | Regular portfolio presentation font, bundled from the existing portfolio implementation |
-| dist/assets/fonts/InstrumentSans-600.woff2 | Semibold portfolio presentation font, bundled from the existing portfolio implementation |
-| dist/assets/tokens.json | Unmodified subset of the supplied data: primitives.mode1 (50) and colorSymanticTokens.mode1 (30) |
+| `dist/assets/fonts/Heading-Bold.woff2` | Supplied bold heading font |
+| `dist/assets/fonts/VanillaSans-Regular.woff2` | Supplied regular text font |
+| `dist/assets/fonts/VanillaSans-Medium.woff2` | Supplied medium text font |
+| `dist/assets/fonts/InstrumentSans-400.woff2` | Regular interface font used by the existing browser implementation |
+| `dist/assets/fonts/InstrumentSans-600.woff2` | Semibold interface font used by the existing browser implementation |
+| `dist/assets/tokens.json` | Runtime subset containing 50 primitive and 30 semantic button colours |
 
-Component arrows, information glyphs, tool icons and drawings are created in HTML/SVG/CSS by the application. There are no missing raster assets or icon-library dependencies.
+Icons and component drawings are rendered by the application with HTML, SVG and CSS. The website does not load the original mixed token export.
 
-| Reference export | Original attachment |
+## Reference files
+
+| File | Source material and purpose |
 | --- | --- |
-| reference/Design-System.pdf | Design System.pdf |
-| reference/Design-System.png | Design System@4x.png |
-| reference/tokens-original.json | tokens.json |
-| reference/fonts-original.zip | Deliveries.zip, including the original desktop/web font formats |
-| reference/button-properties.png | Screenshot 2026-10-22 at 13.14.08.png |
-| reference/input-properties.png | Screenshot 2026-10-22 at 13.14.56.png |
+| `reference/Design-System.pdf` | Original design-system export |
+| `reference/Design-System.png` | Image export of the design system |
+| `reference/button-properties.png` | Button component property screenshot |
+| `reference/input-properties.png` | Input component property screenshot |
+| `reference/tokens-original.json` | Original token export, retained for reference |
+| `reference/fonts-original.zip` | Supplied font delivery archive |
 
-Runtime and reference checksums are in SOURCE_MANIFEST.json. Files under reference/ are retained for editing context and are not served by the development server or Pages workflow. Browser comments and unrelated portfolio assets are not required by this project.
+These static references were used to compare the browser implementation's layout, typography, colours, button and input properties. They do not provide live Figma synchronisation, complete prototype interactions or full variable-binding metadata. Runtime token mappings are explicit. Some small tertiary button backgrounds follow the visual export where the raw token values differ, and user overrides take precedence.
+
+The original token export includes collections beyond the runtime design-system subset. Those collections are preserved only in the reference export; the browser loads only the 50 primitive and 30 semantic values in `dist/assets/tokens.json`.
+
+The bundled heading font includes only a bold file. Other heading weights shown in the type scale are documented but not synthesized in the live specimen. Font files are retained as supplied; review the font vendor's terms before redistribution.
+
+File sizes and SHA-256 checksums are recorded in `SOURCE_MANIFEST.json`. Reference files are kept for design review and are not served by the local development server.

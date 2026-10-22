@@ -1,6 +1,5 @@
 {
   "project": "Design Playground",
-  "source_commit": "c2c16a33cade502d2fc4adbda1d7798089b05ef0",
   "runtime_files": [
     {
       "path": "dist/app.js",
@@ -66,8 +65,8 @@
     },
     {
       "path": "reference/fonts-original.zip",
-      "bytes": 2782010,
-      "sha256": "456ec34a85b428e598f67c1bb1acb7a650fcf5c25f7d4e9f379ec352d8f75b00"
+      "bytes": 2742854,
+      "sha256": "9c069156945b68004d91fa0e44a967f644a179e30a11e8772efeffec67016074"
     },
     {
       "path": "reference/input-properties.png",
