@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Design Playground",
+      "type": "process",
+      "command": "node",
+      "args": [
+        "scripts/dev.mjs"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "design-playground",
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "message": 4
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^Starting Design Playground",
+          "endsPattern": "^Local:"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Check JavaScript",
+      "type": "process",
+      "command": "npm",
+      "args": [
+        "run",
+        "check"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

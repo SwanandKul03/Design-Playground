@@ -1,0 +1,83 @@
+{
+  "project": "Design Playground",
+  "source_commit": "c2c16a33cade502d2fc4adbda1d7798089b05ef0",
+  "runtime_files": [
+    {
+      "path": "dist/app.js",
+      "bytes": 37518,
+      "sha256": "f70fb0ca0110f1a0bfa16500d881941d09965862774420217dc0fda1538e5e10"
+    },
+    {
+      "path": "dist/assets/fonts/Heading-Bold.woff2",
+      "bytes": 32616,
+      "sha256": "ba4db89731c40130d3f63298adeda292a5276b613b1ba656f492df9756dc37c2"
+    },
+    {
+      "path": "dist/assets/fonts/InstrumentSans-400.woff2",
+      "bytes": 27452,
+      "sha256": "a022e31d634dbfc5f63bfa5f8181afa9767a7b58ec4c07d9024a6886ee565856"
+    },
+    {
+      "path": "dist/assets/fonts/InstrumentSans-600.woff2",
+      "bytes": 28556,
+      "sha256": "5af5592a57fe9a7c0ec12c9455055b1845985c88b2813ce663c0f62fc6bbeee4"
+    },
+    {
+      "path": "dist/assets/fonts/VanillaSans-Medium.woff2",
+      "bytes": 34548,
+      "sha256": "52b86b0d45d64d58d884b793fee4597d540bc84ee63e2a43d2eb38c568d7a8cb"
+    },
+    {
+      "path": "dist/assets/fonts/VanillaSans-Regular.woff2",
+      "bytes": 33148,
+      "sha256": "16a7b6999cd7ff0ed117fc2fd7c865089a7d1d0c8b30718d7971105582907780"
+    },
+    {
+      "path": "dist/assets/tokens.json",
+      "bytes": 4055,
+      "sha256": "ea59d3a3df73722b07c5b695f3481a5156082fafe688365641a503a12e934c8a"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 12932,
+      "sha256": "64b0022fa6c1b10530d8f1129b4809a8f78be7dc137fe542877ab0f46fdbd44f"
+    },
+    {
+      "path": "dist/styles.css",
+      "bytes": 23475,
+      "sha256": "a050bbd9ed351e47da516460d1dc97cded67ecb64452cade8d9fcd1bf80d0a1a"
+    }
+  ],
+  "reference_files": [
+    {
+      "path": "reference/Design-System.pdf",
+      "bytes": 2160240,
+      "sha256": "101b24dd2371ddaff6b1ee349cd2adcd947396f0de5d3e1f706c2fd4a64bc6d2"
+    },
+    {
+      "path": "reference/Design-System.png",
+      "bytes": 329858,
+      "sha256": "13792ef3b81b8cb33933dfecc7649cb5f7072a4cf022862c957e2d63b310e865"
+    },
+    {
+      "path": "reference/button-properties.png",
+      "bytes": 98909,
+      "sha256": "725ac73362316193dc9382ace9942fd9ace381845a4bb2602f262c9cfe6b2395"
+    },
+    {
+      "path": "reference/fonts-original.zip",
+      "bytes": 2782010,
+      "sha256": "456ec34a85b428e598f67c1bb1acb7a650fcf5c25f7d4e9f379ec352d8f75b00"
+    },
+    {
+      "path": "reference/input-properties.png",
+      "bytes": 148008,
+      "sha256": "b366f7128ca1ab25512b16831006f919451f6b25e84fe1c6ed739d3a48967d0d"
+    },
+    {
+      "path": "reference/tokens-original.json",
+      "bytes": 16189,
+      "sha256": "e8f35ed5df631f2462ad9062abbc269b6422c380fe1dd998eecbfda402938c6c"
+    }
+  ]
+}

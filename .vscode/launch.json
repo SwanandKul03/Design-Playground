@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Open Design Playground",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:5173/",
+      "webRoot": "${workspaceFolder}/dist",
+      "preLaunchTask": "Start Design Playground"
+    }
+  ]
+}
